@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- using JSP -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <form action="NewFile.jsp" method="post" class="form">
+     
+ 			<div>
+                <input type="number" class="rows" id="rows" name="rows">
+                <label for="rows" class="label_rows">Number of Rows</label>
+                <span class="multiply">X</span>
+                <label for="columns" class="label_columns">Number of Column</label>
+                <input type="number" class="columns" id="columns" name="columns">
+            </div>
+            <div class="color_sections">
+                <div class="color_sections_items">
+                    <label for="color_first">row color 1</label>
+                    <input type="color" class="color_first color" id="color_first" name="color_first">
+                </div>
+                <div class="color_sections_items">
+                    <label for="color_second">row color 2</label>
+                    <input type="color" class="color_second color" id="color_second" name="color_second">
+                </div>
+                <div class="color_sections_items">
+                    <label for="color_background">table background</label>
+                    <input type="color" class="color_background color" id="color_background" name="color_background">
+                </div>
+                <button class="btn">create table</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
